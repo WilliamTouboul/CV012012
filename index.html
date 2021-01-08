@@ -23,23 +23,28 @@
             <h2>Développeur Web</h2>
         </div>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md bg-faded">
-            <a class="navbar-brand" href="#"></a>
+        <nav class="navbar sticky-top navbar-expand-md bg-faded">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
+                </span>
             </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item text-center">
-                        <a class="nav-link" href="#">Lien1</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link" href="#">Lien2</a>
+                        <a class="nav-link" href="#course">Parcours</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link" href="#">Lien3</a>
+                        <a class="nav-link" href="#competences">Compétences</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#aboutMe">Plus</a>
                     </li>
                 </ul>
         </nav>
@@ -52,7 +57,39 @@
                         <img src="assets/images/Luke.jpg" id="myPic">
                     </div>
                     <hr />
+                    <div class="mt-2" id="contact"> CONTACT </div>
                     <div>
+
+                        <!-- modal Résidence -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalHome">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z" />
+                            </svg>
+                        </button>
+                        <div class="modal fade" id="modalHome" tabindex="-1" role="dialog"
+                            aria-labelledby="modalHomeLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center col-12" id="modalHomeLabel">Adresse :</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        25 rue René Le Bian <br>
+                                        76620 Le Havre
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- modal MAIL -->
                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalMail">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -65,21 +102,26 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="modalMailLabel">Adresse Mail</h5>
+                                        <h5 class="modal-title text-center col-12" id="modalMailLabel">Adresse Mail</h5>
                                     </div>
                                     <div class="modal-body">
                                         <a href="mailto:touboul.william@gmail.com"
                                             id="mail">Touboul.william@gmail.com</a>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn" data-bs-dismiss="modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- modal PHONE -->
                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPhone">
-
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <path
                                     d="M17.5 2c.276 0 .5.224.5.5v19c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-19c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-20zm-9.5 1h3c.276 0 .5.224.5.501 0 .275-.224.499-.5.499h-3c-.275 0-.5-.224-.5-.499 0-.277.225-.501.5-.501zm1.5 18c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-13h10v13z" />
@@ -90,19 +132,24 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="modalMailLabel">Numéro de téléphone</h5>
+                                        <h5 class="modal-title text-center col-12" id="modalMailLabel">Numéro de
+                                            téléphone</h5>
                                     </div>
                                     <div class="modal-body">
-                                        06.59.40.65.61
+                                        <a href="tel:0659406561" id="tel">06.59.40.65.61</a>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn" data-bs-dismiss="modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <!-- modal ID DISCORD -->
                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalDiscord">
                             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
@@ -116,21 +163,95 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="modalMailLabel">Identifiant Discord</h5>
+                                        <h5 class="modal-title text-center col-12" id="modalMailLabel">Identifiant
+                                            Discord</h5>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" id="discord">
                                         Kahnienhka#7673
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal Github -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalGithub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </button>
+                        <div class="modal fade" id="modalGithub" tabindex="-1" role="dialog"
+                            aria-labelledby="modalMailLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center col-12" id="modalMailLabel">Page Github</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <a href="https://github.com/WilliamTouboul" target="_blank" id="github">Ma page
+                                            Github</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalLinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <div class="modal fade" id="modalLinkedIn" tabindex="-1" role="dialog"
+                            aria-labelledby="modalLinkedInLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center col-12" id="modalLinkedInLabel">Compte LinkedIn</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <a href="https://www.linkedin.com/in/william-touboul-77b484168/" target="_blank" id="linkedIn">LinkedIn</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="mt-2" id="contact"> CONTACT </div>
+                    
+                    
+                    <hr />
+                    <div>
+                        <p>Passioné d'informatique et de programation depuis des années Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Quisque convallis finibus faucibus. Donec fermentum dictum
+                            lorem, sit amet porttitor tellus varius vel. Phasellus auctor venenatis imperdiet. Duis
+                            interdum porta faucibus. Morbi at lectus imperdiet, egestas nibh at, rhoncus leo. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus lacus, sed semper
+                            eros suscipit vel. Nulla ac mauris sed elit convallis tempus. Vestibulum bibendum velit ut
+                            luctus rutrum. Nunc blandit convallis velit, et elementum ex consectetur et. Donec non est
+                            vel sem laoreet tempus. Fusce massa nisi, porta vel nisi non, condimentum tincidunt orci.
+                            Mauris sed nibh lacus. Sed sodales, lorem in molestie vestibulum, urna tortor elementum
+                            lacus, in porttitor turpis nulla vel nisl. Nulla tincidunt non risus eu euismod.</p>
+                    </div>
                     <hr />
                     <div id="myStatus">
                         <h6> Situations </h6>
@@ -141,30 +262,246 @@
                                     <circle cx="8" cy="8" r="8" />
                                 </svg>En recherche active d'emploi</li>
                         </ul>
-                        <p> </p>
-                        <p>
-                        </p>
-
                     </div>
                 </div>
 
-                <div class="col-md-6 col-sm-12 text-center <!-- Colonne Resumé -->" id="resumeColumn">
-                    <div>4856149875168945168946519845</div>
-                    <hr />
+
+                <!-- Colonne milieu -->
+                <div class="col-md-6 col-sm-12" id="resumeColumn">
+                    <div id="course">
+
+                        <h5 id="courseTitle">Parcours</h5>
+
+                        <h6 class="courseSubTitles">Formations : </h6>
+
+                        <div class="courseElement">
+                            <span class="courseDate">Décembre 2020 -> Mars 2021 : </span>
+                            <span class="courseWhat"> Formation PHP </span>
+                            à
+                            <span class="courseWhere">La Manu/Le Havre</span>
+                            <div class="courseContent">
+                                HTML / CSS / Bootstrap / Javascript <br>
+                                PHP / MySQL
+                            </div>
+
+                        </div>
+                        <div class="courseElement">
+                            <span class="courseDate">Décembre 2018 -> Mars 2019 : </span>
+                            <span class="courseWhat">Formation C#/.NET </span>
+                            à
+                            <span class="courseWhere">La Manu/Le Havre</span>
+                            <div class="courseContent">
+                                C# / .NET <br>
+                                HTML / CSS / Bootstrap / Javascript <br>
+                                SQL / UML / MVC / POO
+                            </div>
+                        </div>
+                        <div class="courseElement">
+                            <span class="courseDate">2013 -> 2014 : </span>
+                            <span class="courseWhat">BAC+2 Geographie & Aménagement </span>
+                            à
+                            <span class="courseWhere">Université du Havre/Le Havre</span>
+                        </div>
+                        <div class="courseElement">
+                            <span class="courseDate">Juin 2019 :</span>
+                            <span class="courseWhat">Obtention du bac S</span>
+                            à
+                            <span class="courseWhere">Lycée Claude Monet/Le Havre
+                            </span>
+                        </div>
+                        <hr />
+
+                        <h6 class="courseSubTitles">Expériences : </h6>
+                        <div class="courseElement">
+                            <span class="courseDate">Juin 2011 -> Aout 2017 : </span>
+                            <span class="courseWhat">Résponsable et encadrant pédagogique </span>
+                            à
+                            <span class="courseWhere">Havr'étude/Le Havre</span>
+                            <div class="courseContent">
+                                Encadrement d'une équipe <br>
+                                Aide aux devoirs <br>
+                                Conseils aux parents
+                            </div>
+                        </div>
+                        <div class="courseElement">
+                            <span class="courseDate">Septembre 2016 -> Octobre 2016 : </span>
+                            <span class="courseWhat">Relation Entreprise</span>
+                            à
+                            <span class="courseWhere">Pôle Emploi/Le Havre</span>
+                            <div class="courseContent">
+                                Phoning<br>
+                                Traitement des candidatures
+                            </div>
+                        </div>
+                        <div class="courseElement">
+                            <span class="courseDate">Avril 2014 : </span>
+                            <span class="courseWhat">Stage d'assistant comptable </span>
+                            à
+                            <span class="courseWhere">Immobiliére basse-seine/LeHavre</span>
+                            <div class="courseContent">
+                                Phoning<br>
+                                Traitement des candidatures
+                            </div>
+                        </div>
+
+
+                    </div>
+
                 </div>
+
+
                 <!-- Colonne Comp-->
-                <div class="col-md-3 col-sm-12 text-center" id="competenceColumn">
-                    <div>"'(-è_çà_àçè_-(è'-('-è_çàè</div>
-                    <hr />
+                <div class="col-md-3 col-sm-12" id="competenceColumn">
+                    <div id="competences">
+                        <h5>Compétences</h5>
+                        <div>
+                            <h6>Langages :</h6>
+                            <ul>
+                                <li>
+                                    HTML/CSS
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>Bootstrap
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>C#
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>Javascript & Jquery
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>SQL
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>PHP
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <h5>Outils :</h5>
+                        <ul>
+                            <li>VS.Code
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li>Visual Studio
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li>Umbrello
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <hr>
+                        <h5>Langues parlées :</h5>
+                        <ul>
+                            <li>
+                                Français
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li>
+                                Anglais
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li>
+                                Espagnol
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li>
+                                Japonais
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li>
+                                Coréen
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <!-- Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-        </script>
+
+
+         <div class="row" id="aboutMe">
+                <div class="col-12">
+                    Hobbies :
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <footer class="text-center">
+                <div>
+                    ©William Touboul 2021 <br>Reproduction à des fins commerciales interdite.<br>
+                </div>
+            </footer>
+
+            <!-- Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+                crossorigin="anonymous">
+            </script>
 
     </body>
 

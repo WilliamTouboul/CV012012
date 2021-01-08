@@ -1,16 +1,24 @@
+/* fond et base */
 html,
 body {
-    background-color: rgb(95, 95, 95);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#banner {
-    background-color: rgb(45, 45, 45);
-    color: rgb(218, 218, 218);
-    padding: 2em;
-    border-bottom: goldenrod solid 3px;
+body {
+    background-image: url('images/background-image.jpg');
+    background-attachment: fixed;
+
 }
 
+/* header */
+#banner {
+    background-color: rgb(45, 45, 45, 0.7);
+    color: rgb(218, 218, 218);
+    padding: 2em;
+    border-bottom: #ffd151 solid 3px;
+}
+
+/* mise en forme navbar */
 .nav-link {
     text-decoration: none;
     color: black;
@@ -19,7 +27,7 @@ body {
 }
 
 .nav-link:hover {
-    color:goldenrod;
+    color: #FEDA74;
 }
 
 .navbar {
@@ -27,18 +35,60 @@ body {
     text-align: center;
 }
 
+/* resize photo */
 #myPic {
     width: 60%;
     height: auto;
 }
 
-#identityColumn {
-    background-color: rgb(35,35,35);
-    color : white;
+/* mise en forme colonne */
+#identityColumn,
+#resumeColumn,
+#competenceColumn,
+#aboutMe {
+    padding-top: 25px;
+    background-color: rgb(35, 35, 35, 0.4);
+    color: rgb(218, 218, 218);
+    min-height: 100%;
 }
 
+.courseElement {
+    margin-top: 12px;
+}
+
+.courseDate {
+    color: white;
+}
+
+.courseWhat {
+    color: #FEDA74;
+    font-weight: bold;
+}
+
+.courseContent {
+    color: rgb(190, 190, 190);
+}
+
+.courseWhere {
+    color: #FEDA74;
+}
+
+.progress-bar {
+    background-color: #FEDA74;
+}
+
+footer {
+    color: rgb(170, 170, 170, 0.6);
+}
+
+
+
+
+
+
+/* reglage modale contact */
 .btn {
-    background-color: goldenrod;
+    background-color: #FEDA74;
 }
 
 .btn:hover {
@@ -53,18 +103,41 @@ body {
     border: rgb(95, 95, 95) solid 1px;
 }
 
-#mail {
+
+/* liens */
+#mail,
+#tel,
+#github,
+#discord,
+#linkedIn {
     text-decoration: none;
+    color: rgb(218, 218, 218);
+    font-size: 24px;
 }
 
-#mail:hover {
-    color: gold;
+@media screen and (max-width: 600x) {
+
+    #mail,
+    #tel,
+    #github,
+    #linkedIn {
+        font-size: 14x;
+    }
+
+}
+
+#mail:hover,
+#tel:hover,
+#github:hover,
+#linkedIn:hover {
+    color: #FEDA74;
 }
 
 #contact {
     font-size: 25px;
 }
 
+/*status*/
 .greenCircle {
     color: rgb(25, 207, 19);
 }
@@ -72,6 +145,7 @@ body {
 ul {
     list-style-type: none;
 }
+
 #myStatus {
     text-align: center;
 }
