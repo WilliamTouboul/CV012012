@@ -1,508 +1,560 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <!-- Fontawsome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-            crossorigin="anonymous" />
-        <!-- CSS -->
-        <link href="assets/style.css" rel="stylesheet">
-        <title>CV William Touboul</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- CSS -->
+    <link href="assets/style.css" rel="stylesheet">
+    <title>CV William Touboul</title>
+</head>
 
-    <body>
-        <!-- Banniére -->
+<body onload="slideOnLoad();">
+    <!-- Banniére -->
+    <header>
         <div class="container-fluid col-12 text-center" id="banner">
             <h1 id="name">William Touboul</h1>
             <h2>Développeur Web</h2>
         </div>
-        <!-- Navbar -->
-        <nav class="navbar sticky-top navbar-expand-md bg-faded">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="#course">Parcours</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="#competences">Compétences</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="#aboutMe">Plus</a>
-                    </li>
-                </ul>
-        </nav>
-        <!-- Fin de la Navbar -->
-        <div class="container-fluid">
-            <div class="row">
-                <!-- COlonne presentation -->
-                <div class="col-md-3 col-sm-12 text-center" id="identityColumn">
-                    <div class="pt-4">
-                        <img src="assets/images/Luke.jpg" id="myPic">
-                    </div>
-                    <hr />
-                    <div class="mt-2" id="contact"> CONTACT </div>
-                    <div>
 
-                        <!-- modal Résidence -->
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalHome">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z" />
-                            </svg>
-                        </button>
-                        <div class="modal fade" id="modalHome" tabindex="-1" role="dialog"
-                            aria-labelledby="modalHomeLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title text-center col-12" id="modalHomeLabel">Adresse :</h5>
-                                    </div>
-                                    <div class="modal-body">
-                                        25 rue René Le Bian <br>
-                                        76620 Le Havre
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn" data-bs-dismiss="modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-                                            </svg>
-                                        </button>
-                                    </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-md bg-faded">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="#course">Parcours</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="#competences">Compétences</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="#aboutMe">Plus</a>
+                </li>
+            </ul>
+    </nav>
+    <!-- Fin de la Navbar -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- COlonne presentation -->
+            <div class="col-md-3 col-sm-12 text-center" id="identityColumn">
+                <div class="pt-4">
+                    <img src="assets/images/Luke.jpg" id="myPic">
+                </div>
+                <hr />
+                <div class="mt-2" id="contact"> CONTACT </div>
+                <div>
+
+                    <!-- modal Résidence -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalHome">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z" />
+                        </svg>
+                    </button>
+                    <div class="modal fade" id="modalHome" tabindex="-1" role="dialog" aria-labelledby="modalHomeLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center col-12" id="modalHomeLabel">Adresse :</h5>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- modal MAIL -->
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalMail">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
-                            </svg>
-                        </button>
-                        <div class="modal fade" id="modalMail" tabindex="-1" role="dialog"
-                            aria-labelledby="modalMailLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title text-center col-12" id="modalMailLabel">Adresse Mail</h5>
-                                    </div>
-                                    <div class="modal-body">
-                                        <a href="mailto:touboul.william@gmail.com"
-                                            id="mail">Touboul.william@gmail.com</a>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn" data-bs-dismiss="modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-                                            </svg>
-                                        </button>
-                                    </div>
+                                <div class="modal-body">
+                                    25 rue René Le Bian <br>
+                                    76620 Le Havre
                                 </div>
-                            </div>
-                        </div>
-                        <!-- modal PHONE -->
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPhone">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M17.5 2c.276 0 .5.224.5.5v19c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-19c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-20zm-9.5 1h3c.276 0 .5.224.5.501 0 .275-.224.499-.5.499h-3c-.275 0-.5-.224-.5-.499 0-.277.225-.501.5-.501zm1.5 18c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-13h10v13z" />
-                            </svg>
-                        </button>
-                        <div class="modal fade" id="modalPhone" tabindex="-1" role="dialog"
-                            aria-labelledby="modalMailLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title text-center col-12" id="modalMailLabel">Numéro de
-                                            téléphone</h5>
-                                    </div>
-                                    <div class="modal-body">
-                                        <a href="tel:0659406561" id="tel">06.59.40.65.61</a>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn" data-bs-dismiss="modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- modal ID DISCORD -->
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalDiscord">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                clip-rule="evenodd">
-                                <path
-                                    d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
-                            </svg>
-                        </button>
-                        <div class="modal fade" id="modalDiscord" tabindex="-1" role="dialog"
-                            aria-labelledby="modalMailLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title text-center col-12" id="modalMailLabel">Identifiant
-                                            Discord</h5>
-                                    </div>
-                                    <div class="modal-body" id="discord">
-                                        Kahnienhka#7673
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- modal Github -->
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalGithub">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </button>
-                        <div class="modal fade" id="modalGithub" tabindex="-1" role="dialog"
-                            aria-labelledby="modalMailLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title text-center col-12" id="modalMailLabel">Page Github</h5>
-                                    </div>
-                                    <div class="modal-body">
-                                        <a href="https://github.com/WilliamTouboul" target="_blank" id="github">Ma page
-                                            Github</a>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalLinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </button>
-                        <div class="modal fade" id="modalLinkedIn" tabindex="-1" role="dialog"
-                            aria-labelledby="modalLinkedInLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title text-center col-12" id="modalLinkedInLabel">Compte LinkedIn</h5>
-                                    </div>
-                                    <div class="modal-body">
-                                        <a href="https://www.linkedin.com/in/william-touboul-77b484168/" target="_blank" id="linkedIn">LinkedIn</a>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-                                            </svg>
-                                        </button>
-                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-bs-dismiss="modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    
-                    <hr />
-                    <div>
-                        <p>Passioné d'informatique et de programation depuis des années Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. Quisque convallis finibus faucibus. Donec fermentum dictum
-                            lorem, sit amet porttitor tellus varius vel. Phasellus auctor venenatis imperdiet. Duis
-                            interdum porta faucibus. Morbi at lectus imperdiet, egestas nibh at, rhoncus leo. Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus lacus, sed semper
-                            eros suscipit vel. Nulla ac mauris sed elit convallis tempus. Vestibulum bibendum velit ut
-                            luctus rutrum. Nunc blandit convallis velit, et elementum ex consectetur et. Donec non est
-                            vel sem laoreet tempus. Fusce massa nisi, porta vel nisi non, condimentum tincidunt orci.
-                            Mauris sed nibh lacus. Sed sodales, lorem in molestie vestibulum, urna tortor elementum
-                            lacus, in porttitor turpis nulla vel nisl. Nulla tincidunt non risus eu euismod.</p>
+                    <!-- modal MAIL -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalMail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+                        </svg>
+                    </button>
+                    <div class="modal fade" id="modalMail" tabindex="-1" role="dialog" aria-labelledby="modalMailLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center col-12" id="modalMailLabel">Adresse Mail</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="mailto:touboul.william@gmail.com" id="mail">Touboul.william@gmail.com</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-bs-dismiss="modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <hr />
-                    <div id="myStatus">
-                        <h6> Situations </h6>
-                        <ul>
-                            <li>En formations</li>
-                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-circle-fill greenCircle" viewBox="0 0 16 16">
-                                    <circle cx="8" cy="8" r="8" />
-                                </svg>En recherche active d'emploi</li>
-                        </ul>
+                    <!-- modal PHONE -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPhone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M17.5 2c.276 0 .5.224.5.5v19c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-19c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-20zm-9.5 1h3c.276 0 .5.224.5.501 0 .275-.224.499-.5.499h-3c-.275 0-.5-.224-.5-.499 0-.277.225-.501.5-.501zm1.5 18c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-13h10v13z" />
+                        </svg>
+                    </button>
+                    <div class="modal fade" id="modalPhone" tabindex="-1" role="dialog" aria-labelledby="modalMailLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center col-12" id="modalMailLabel">Numéro de
+                                        téléphone</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="tel:0659406561" id="tel">06.59.40.65.61</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-bs-dismiss="modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal ID DISCORD -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalDiscord">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                            clip-rule="evenodd">
+                            <path
+                                d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
+                        </svg>
+                    </button>
+                    <div class="modal fade" id="modalDiscord" tabindex="-1" role="dialog"
+                        aria-labelledby="modalMailLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center col-12" id="modalMailLabel">Identifiant
+                                        Discord</h5>
+                                </div>
+                                <div class="modal-body" id="discord">
+                                    Kahnienhka#7673
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal Github -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalGithub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </button>
+                    <div class="modal fade" id="modalGithub" tabindex="-1" role="dialog"
+                        aria-labelledby="modalMailLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center col-12" id="modalMailLabel">Page Github</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="https://github.com/WilliamTouboul" target="_blank" id="github">Ma page
+                                        Github</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalLinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </button>
+                    <div class="modal fade" id="modalLinkedIn" tabindex="-1" role="dialog"
+                        aria-labelledby="modalLinkedInLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center col-12" id="modalLinkedInLabel">Compte LinkedIn
+                                    </h5>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="https://www.linkedin.com/in/william-touboul-77b484168/" target="_blank"
+                                        id="linkedIn">LinkedIn</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
 
-                <!-- Colonne milieu -->
-                <div class="col-md-6 col-sm-12" id="resumeColumn">
-                    <div id="course">
+                <hr />
+                <div>
+                    <p>Passioné d'informatique et de programmation depuis des années Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Quisque convallis finibus faucibus. Donec fermentum dictum
+                        lorem, sit amet porttitor tellus varius vel. Phasellus auctor venenatis imperdiet. Duis
+                        interdum porta faucibus. Morbi at lectus imperdiet, egestas nibh at, rhoncus leo. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus lacus, sed semper
+                        eros suscipit vel. Nulla ac mauris sed elit convallis tempus. Vestibulum bibendum velit ut
+                        luctus rutrum. Nunc blandit convallis velit, et elementum ex consectetur et. Donec non est
+                        vel sem laoreet tempus. Fusce massa nisi, porta vel nisi non, condimentum tincidunt orci.
+                        Mauris sed nibh lacus. Sed sodales, lorem in molestie vestibulum, urna tortor elementum
+                        lacus, in porttitor turpis nulla vel nisl. Nulla tincidunt non risus eu euismod.</p>
+                </div>
+                <hr />
+                <div id="myStatus">
+                    <h6> Situations </h6>
+                    <ul>
+                        <li>En formations</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-circle-fill greenCircle" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8" />
+                            </svg>En recherche active d'emploi</li>
+                    </ul>
+                </div>
+            </div>
 
-                        <h5 id="courseTitle">Parcours</h5>
 
-                        <h6 class="courseSubTitles">Formations : </h6>
+            <!-- Colonne milieu -->
+            <div class="col-md-6 col-sm-12" id="resumeColumn">
+                <div id="course">
 
-                        <div class="courseElement">
-                            <span class="courseDate">Décembre 2020 -> Mars 2021 : </span>
-                            <span class="courseWhat"> Formation PHP </span>
-                            à
-                            <span class="courseWhere">La Manu/Le Havre</span>
-                            <div class="courseContent">
-                                HTML / CSS / Bootstrap / Javascript <br>
-                                PHP / MySQL
-                            </div>
+                    <h5 id="courseTitle">Parcours</h5>
 
-                        </div>
-                        <div class="courseElement">
-                            <span class="courseDate">Décembre 2018 -> Mars 2019 : </span>
-                            <span class="courseWhat">Formation C#/.NET </span>
-                            à
-                            <span class="courseWhere">La Manu/Le Havre</span>
-                            <div class="courseContent">
-                                C# / .NET <br>
-                                HTML / CSS / Bootstrap / Javascript <br>
-                                SQL / UML / MVC / POO
-                            </div>
-                        </div>
-                        <div class="courseElement">
-                            <span class="courseDate">2013 -> 2014 : </span>
-                            <span class="courseWhat">BAC+2 Geographie & Aménagement </span>
-                            à
-                            <span class="courseWhere">Université du Havre/Le Havre</span>
-                        </div>
-                        <div class="courseElement">
-                            <span class="courseDate">Juin 2019 :</span>
-                            <span class="courseWhat">Obtention du bac S</span>
-                            à
-                            <span class="courseWhere">Lycée Claude Monet/Le Havre
-                            </span>
-                        </div>
-                        <hr />
+                    <h6 class="courseSubTitles">Formations : </h6>
 
-                        <h6 class="courseSubTitles">Expériences : </h6>
-                        <div class="courseElement">
-                            <span class="courseDate">Juin 2011 -> Aout 2017 : </span>
-                            <span class="courseWhat">Résponsable et encadrant pédagogique </span>
-                            à
-                            <span class="courseWhere">Havr'étude/Le Havre</span>
-                            <div class="courseContent">
-                                Encadrement d'une équipe <br>
-                                Aide aux devoirs <br>
-                                Conseils aux parents
-                            </div>
+                    <div class="courseElement">
+                        <span class="courseDate">Décembre 2020 -> Mars 2021 : </span>
+                        <span class="courseWhat"> Formation PHP </span>
+                        à
+                        <span class="courseWhere">La Manu/Le Havre</span>
+                        <div class="courseContent">
+                            HTML / CSS / Bootstrap / Javascript <br>
+                            PHP / MySQL
                         </div>
-                        <div class="courseElement">
-                            <span class="courseDate">Septembre 2016 -> Octobre 2016 : </span>
-                            <span class="courseWhat">Relation Entreprise</span>
-                            à
-                            <span class="courseWhere">Pôle Emploi/Le Havre</span>
-                            <div class="courseContent">
-                                Phoning<br>
-                                Traitement des candidatures
-                            </div>
-                        </div>
-                        <div class="courseElement">
-                            <span class="courseDate">Avril 2014 : </span>
-                            <span class="courseWhat">Stage d'assistant comptable </span>
-                            à
-                            <span class="courseWhere">Immobiliére basse-seine/LeHavre</span>
-                            <div class="courseContent">
-                                Phoning<br>
-                                Traitement des candidatures
-                            </div>
-                        </div>
-
 
                     </div>
+                    <div class="courseElement">
+                        <span class="courseDate">Décembre 2018 -> Mars 2019 : </span>
+                        <span class="courseWhat">Formation C#/.NET </span>
+                        à
+                        <span class="courseWhere">La Manu/Le Havre</span>
+                        <div class="courseContent">
+                            C# / .NET <br>
+                            HTML / CSS / Bootstrap / Javascript <br>
+                            SQL / UML / MVC / POO
+                        </div>
+                    </div>
+                    <div class="courseElement">
+                        <span class="courseDate">2013 -> 2014 : </span>
+                        <span class="courseWhat">BAC+2 Geographie & Aménagement </span>
+                        à
+                        <span class="courseWhere">Université du Havre/Le Havre</span>
+                    </div>
+                    <div class="courseElement">
+                        <span class="courseDate">Juin 2019 :</span>
+                        <span class="courseWhat">Obtention du bac S</span>
+                        à
+                        <span class="courseWhere">Lycée Claude Monet/Le Havre
+                        </span>
+                    </div>
+                    <hr />
+
+                    <h6 class="courseSubTitles">Expériences : </h6>
+                    <div class="courseElement">
+                        <span class="courseDate">Juin 2011 -> Aout 2017 : </span>
+                        <span class="courseWhat">Résponsable et encadrant pédagogique </span>
+                        à
+                        <span class="courseWhere">Havr'étude/Le Havre</span>
+                        <div class="courseContent">
+                            Encadrement d'une équipe <br>
+                            Aide aux devoirs <br>
+                            Conseils aux parents
+                        </div>
+                    </div>
+                    <div class="courseElement">
+                        <span class="courseDate">Septembre 2016 -> Octobre 2016 : </span>
+                        <span class="courseWhat">Relation Entreprise</span>
+                        à
+                        <span class="courseWhere">Pôle Emploi/Le Havre</span>
+                        <div class="courseContent">
+                            Phoning<br>
+                            Traitement des candidatures
+                        </div>
+                    </div>
+                    <div class="courseElement">
+                        <span class="courseDate">Avril 2014 : </span>
+                        <span class="courseWhat">Stage d'assistant comptable </span>
+                        à
+                        <span class="courseWhere">Immobiliére basse-seine/LeHavre</span>
+                        <div class="courseContent">
+                            Phoning<br>
+                            Traitement des candidatures
+                        </div>
+                    </div>
+
 
                 </div>
 
+            </div>
 
-                <!-- Colonne Comp-->
-                <div class="col-md-3 col-sm-12" id="competenceColumn">
-                    <div id="competences">
-                        <h5>Compétences</h5>
-                        <div>
-                            <h6>Langages :</h6>
-                            <ul>
-                                <li>
-                                    HTML/CSS
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                            role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                                            aria-valuemax="100"></div>
-                                    </div>
-                                </li>
-                                <li>Bootstrap
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                            role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                                            aria-valuemax="100"></div>
-                                    </div>
-                                </li>
-                                <li>C#
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                            role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                            aria-valuemax="100"></div>
-                                    </div>
-                                </li>
-                                <li>Javascript & Jquery
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                            role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                                            aria-valuemax="100"></div>
-                                    </div>
-                                </li>
-                                <li>SQL
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                            role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                            aria-valuemax="100"></div>
-                                    </div>
-                                </li>
-                                <li>PHP
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                            role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
-                                            aria-valuemax="100"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <hr>
-                        <h5>Outils :</h5>
+
+            <!-- Colonne Comp-->
+            <div class="col-md-3 col-sm-12" id="competenceColumn">
+                <div id="competences">
+                    <h5>Compétences</h5>
+                    <div>
+                        <h6>Langages :</h6>
                         <ul>
-                            <li>VS.Code
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </li>
-                            <li>Visual Studio
+                            <li>
+                                HTML/CSS
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated"
                                         role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </li>
-                            <li>Umbrello
+                            <li>Bootstrap
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0"
+                                        role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </li>
-                        </ul>
-                        <hr>
-                        <h5>Langues parlées :</h5>
-                        <ul>
-                            <li>
-                                Français
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </li>
-                            <li>
-                                Anglais
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
-                                </div>
-                            </li>
-                            <li>
-                                Espagnol
+                            <li>C#
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated"
                                         role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </li>
-                            <li>
-                                Japonais
+                            <li>Javascript & Jquery
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+                                        role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </li>
-                            <li>
-                                Coréen
+                            <li>SQL
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0"
+                                        role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li>PHP
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                             </li>
                         </ul>
-                        <hr>
+                    </div>
+                    <hr>
+                    <h5>Outils :</h5>
+                    <ul>
+                        <li>VS.Code
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>Visual Studio
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>Umbrello
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>Photoshop
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <hr>
+                    <h5>Langues parlées :</h5>
+                    <ul>
+                        <li>
+                            Français
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Anglais
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Espagnol
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Japonais
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Coréen
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="aboutMe">
+            <div class="col-12 text-center"> Hobbies : </div>
+
+
+            <!-- Premiere Colonne -->
+            <div class="col-md-4 col-sm-12 text-center">
+                <div> <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" class="logoHobbies"
+                        fill="currentColor" clip-rule="evenodd">
+                        <path
+                            d="M3.691 10h6.309l-3-7h2l7 7h5c1.322-.007 3 1.002 3 2s-1.69 1.993-3 2h-5l-7 7h-2l3-7h-6.309l-2.292 2h-1.399l1.491-4-1.491-4h1.399l2.292 2" />
+                    </svg>
+                    Voyages
+                </div>
+                <div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="logoHobbies" fill="currentColor" width="36"
+                            height="36" viewBox="0 0 24 24">
+                            <path
+                                d="M22 1v2h-2v-2h-2v4h-12v-4h-2v2h-2v-2h-2v22h2v-2h2v2h2v-4h12v4h2v-2h2v2h2v-22h-2zm-18 18h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm14 9h-12v-8h12v8zm4 3h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2z" />
+                        </svg>
+                        Cinéma
                     </div>
                 </div>
             </div>
 
+            <!-- deuxieme colonne -->
+            <div class="col-md-4 col-sm-12 text-center">
 
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="logoHobbies" fill="currentColor" width="36"
+                        height="36" viewBox="0 0 24 24">
+                        <path
+                            d="M2 0c-1.104 0-2 .896-2 2v15c0 1.104.896 2 2 2h20c1.104 0 2-.896 2-2v-15c0-1.104-.896-2-2-2h-20zm20 14h-20v-12h20v12zm-6.599 7c0 1.6 1.744 2.625 2.599 3h-12c.938-.333 2.599-1.317 2.599-3h6.802z" />
+                    </svg>
+                    Jeux vidéos
+                </div>
 
-
-         <div class="row" id="aboutMe">
-                <div class="col-12">
-                    Hobbies :
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="logoHobbies" fill="currentColor" width="36"
+                        height="36" viewBox="0 0 24 24">
+                        <path
+                            d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z" />
+                    </svg>
+                    Programmation
                 </div>
             </div>
 
-
-
-
-
-
-
-            <footer class="text-center">
+            <!-- troisieme colonne -->
+            <div class="col-md-4 col-sm-12 text-center">
                 <div>
-                    ©William Touboul 2021 <br>Reproduction à des fins commerciales interdite.<br>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="logoHobbies" fill="currentColor" width="36"
+                        height="36" viewBox="0 0 24 24">
+                        <path
+                            d="M12 4.706c-2.938-1.83-7.416-2.566-12-2.706v17.714c3.937.12 7.795.681 10.667 1.995.846.388 1.817.388 2.667 0 2.872-1.314 6.729-1.875 10.666-1.995v-17.714c-4.584.14-9.062.876-12 2.706zm-10 13.104v-13.704c5.157.389 7.527 1.463 9 2.334v13.168c-1.525-.546-4.716-1.504-9-1.798zm20 0c-4.283.293-7.475 1.252-9 1.799v-13.171c1.453-.861 3.83-1.942 9-2.332v13.704zm-2-10.214c-2.086.312-4.451 1.023-6 1.672v-1.064c1.668-.622 3.881-1.315 6-1.626v1.018zm0 3.055c-2.119.311-4.332 1.004-6 1.626v1.064c1.549-.649 3.914-1.361 6-1.673v-1.017zm0-2.031c-2.119.311-4.332 1.004-6 1.626v1.064c1.549-.649 3.914-1.361 6-1.673v-1.017zm0 6.093c-2.119.311-4.332 1.004-6 1.626v1.064c1.549-.649 3.914-1.361 6-1.673v-1.017zm0-2.031c-2.119.311-4.332 1.004-6 1.626v1.064c1.549-.649 3.914-1.361 6-1.673v-1.017zm-16-6.104c2.119.311 4.332 1.004 6 1.626v1.064c-1.549-.649-3.914-1.361-6-1.672v-1.018zm0 5.09c2.086.312 4.451 1.023 6 1.673v-1.064c-1.668-.622-3.881-1.315-6-1.626v1.017zm0-2.031c2.086.312 4.451 1.023 6 1.673v-1.064c-1.668-.622-3.881-1.316-6-1.626v1.017zm0 6.093c2.086.312 4.451 1.023 6 1.673v-1.064c-1.668-.622-3.881-1.315-6-1.626v1.017zm0-2.031c2.086.312 4.451 1.023 6 1.673v-1.064c-1.668-.622-3.881-1.315-6-1.626v1.017z" />
+                    </svg>
+                    Lecture
                 </div>
-            </footer>
+            </div>
 
-            <!-- Bootstrap -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-                crossorigin="anonymous">
-            </script>
+        </div>
+    </div>
 
-    </body>
+    <footer class="text-center">
+        <div>
+            ©William Touboul 2021 <br>Reproduction à des fins commerciales interdite.<br>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+</body>
 
 </html>
